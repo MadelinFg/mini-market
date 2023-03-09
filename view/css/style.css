@@ -19,6 +19,10 @@
     color: var(--primary-blue);
 }
 
+.bold-600 {
+    font-weight: 600;
+}
+
 .navbar-expand-lg {
     padding: 10px 40px !important;
 }
@@ -50,6 +54,6 @@
     padding: 2rem;
 }
 
-.btn:hover {
+.btn.bg-primary-blue:hover {
     background-color: var(--primary-blue);
 }
