@@ -12,5 +12,9 @@
 
             return($id != false) ? header("Location:ver.php?id=".$id) : header("Location:create.php");
         }
+
+        public function ver($id) {
+            return ($this->model->ver($id) != false) ? $this->model->ver($id) : header("Location:index.php");
+        }
     }
 ?>

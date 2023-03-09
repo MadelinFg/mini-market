@@ -15,5 +15,11 @@
             $statement->bindParam(":descripcion", $descripcion);
             return($statement->execute()) ? $this->PDO->lastInsertId() : false;
         }
+
+        public function ver($id) {
+            $statement = $this->PDO->prepare("SELECT * FROM productos WHERE id= :id limit 1");
+            $statement->bindParam(":id", $id);
+            return($statement->execute()) ? $statement->fetch() : false;
+        }
     }
 ?>
