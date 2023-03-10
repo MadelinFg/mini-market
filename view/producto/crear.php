@@ -5,7 +5,7 @@
 <form action="store.php" method="POST" class="w-50 mx-auto my-3 d-flex flex-column justify-content-center">
     <div class="mb-3">
         <label for="inpt-nombre" class="form-label">Nombre</label>
-        <input require type="text" class="form-control" id="inpt-nombre" name="inpt-nombre" placeholder="Agua embotellada">
+        <input require type="text" class="form-control" id="inpt-nombre" name="inpt-nombre" placeholder="Nombre del producto">
     </div>
     <div class="mb-3">
         <label for="inpt-precio" class="form-label">Precio</label>
