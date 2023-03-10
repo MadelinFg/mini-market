@@ -23,7 +23,28 @@
 
     <div class="row justify-content-around mt-5">
         <a href="index.php" class="btn w-25 col-4 bg-primary-blue white-font">Inicio</a>
-        <button type="button" class="btn w-25 col-4 btn-warning white-font">Actualizar registro</button>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary col-4 btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Eliminar
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">¿Desea eliminar el registro?</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Esta acción no se puede deshacer
+            </div>
+            <div class="modal-footer">
+                <a href="eliminar.php?id=<?= $data['id'] ?>" type="button" class="btn btn-danger">Eliminar</a>
+            </div>
+            </div>
+        </div>
+        </div>
     </div>
 </div>
 
